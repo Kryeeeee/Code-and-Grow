@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "flex";
     wakeUpBtn.style.display = "none";
 
-    panda.src = "/assets/panda-young-sleeping.png";
+    panda.src = "/Code-and-Grow/assets/panda-young-sleeping.png";
 
     setTimeout(() => {
       wakeUpBtn.style.display = "inline-block";
@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   wakeUpBtn.addEventListener("click", () => {
     modal.style.display = "none";
-    panda.src = "/assets/panda-young.png";
+    panda.src = "/Code-and-Grow/assets/panda-young.png";
   });
 });

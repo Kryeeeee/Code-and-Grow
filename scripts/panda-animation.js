@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const PNG = "/assets/panda-young.png";
-  const GIF = "/assets/panda-young.gif";
+  const PNG = "/Code-and-Grow/assets/panda-young.png";
+  const GIF = "/Code-and-Grow/assets/panda-young.gif";
 
   const gifUrl = () => `${GIF}?t=${Date.now()}`;
 

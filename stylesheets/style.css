@@ -20,13 +20,13 @@
 }
 
 .island-img {
-  background-image: url("/assets/island.png");
+  background-image: url("/Code-and-Grow/assets/island.png");
 }
 .room-img {
-  background-image: url("/assets/room.png");
+  background-image: url("/Code-and-Grow/assets/room.png");
 }
 .water-img {
-  background-image: url("/assets/water.png");
+  background-image: url("/Code-and-Grow/assets/water.png");
 }
 
 /* ===================================================================== */

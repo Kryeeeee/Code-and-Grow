@@ -16,9 +16,9 @@ async function loadClassData() {
   }
   
   try {
-    const classResponse = await fetch('/assets/data/classes.json');
+    const classResponse = await fetch('/Code-and-Grow/assets/data/classes.json');
     const classJson = await classResponse.json();
-    const lessonResponse = await fetch('/assets/data/lessons.json');
+    const lessonResponse = await fetch('/Code-and-Grow/assets/data/lessons.json');
     const lessonJson = await lessonResponse.json();
     const levelKey = `level${CURRENT_LEVEL}`;
     const classKey = `class${CURRENT_CLASS}`;
@@ -65,7 +65,7 @@ function showGameOver(reason) {
         <h2>💔 Game Over</h2>
         <p>You ran out of health.</p>
         <p>Take a break and come back later!</p>
-        <button class="check-btn" onclick="window.location.href='/main-pages/start-menu.html'">
+        <button class="check-btn" onclick="window.location.href='/Code-and-Grow/main-pages/start-menu.html'">
           Back to Home
         </button>
       </div>
@@ -76,7 +76,7 @@ function showGameOver(reason) {
         <h2>⚡ No Energy</h2>
         <p>You ran out of energy.</p>
         <p>Rest to restore your energy!</p>
-        <button class="check-btn" onclick="window.location.href='/main-pages/levels/level${CURRENT_LEVEL}.html'">
+        <button class="check-btn" onclick="window.location.href='/Code-and-Grow/main-pages/levels/level${CURRENT_LEVEL}.html'">
           Back to Level
         </button>
       </div>
@@ -696,9 +696,9 @@ function goNext() {
   if (CURRENT_CLASS < totalClasses) {
     window.location.href = `class${CURRENT_CLASS + 1}.html`;
   } else if (CURRENT_LEVEL >= TOTAL_LEVELS) {
-    window.location.href = `/main-pages/levels/level${CURRENT_LEVEL}.html`;
+    window.location.href = `/Code-and-Grow/main-pages/levels/level${CURRENT_LEVEL}.html`;
   } else {
-    window.location.href = `/main-pages/levels/level${CURRENT_LEVEL + 1}.html`;
+    window.location.href = `/Code-and-Grow/main-pages/levels/level${CURRENT_LEVEL + 1}.html`;
   }
 }
 
